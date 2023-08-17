@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  get 'greetings_api/random'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
   # root "articles#index"
+  get 'random_greeting', to: 'greetings_api#random'
+
 end
