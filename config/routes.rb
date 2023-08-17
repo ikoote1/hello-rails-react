@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
   namespace :api do
-    get 'greetings/random'
+    get 'greetings/random', to: 'greetings#random'
   end
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
+  # Other routes can be defined here
 
   # Defines the root path route ("/")
-  root "root#index"
+  root 'application#home'
+
 end

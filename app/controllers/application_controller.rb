@@ -1,2 +1,6 @@
 class ApplicationController < ActionController::Base
-end
+    def home
+      render 'layouts/home'
+    end
+  end
+  
